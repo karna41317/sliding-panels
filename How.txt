@@ -1,0 +1,13 @@
+How it works
+
+The basic premise for how this works is that there is a container that is double the width of the viewport and inside the container are two divs, each exactly one hundred percent of the viewport. They are floated next to one another and do not wrap because their container is wide enough to contain them without breaking the float. Due to the outer container being 200% of the viewport this creates horizontal scrollbars. To fix this there is an outer container that houses everything and its overflowing contents are hidden with CSS.
+
+Now we only see the left div and the right div is past the edge of the viewport. To only show half of each div we position them to the left by -25%. Now if we want to see all of the left div we would translate it to the right by 50%, and do the opposite for the right div.
+
+Styling
+
+To have each div fill the entire height of the viewport we set the height to 100vh, nice and easy. We also setup some classes to be toggled with JavaScript, an active class and a hidden class for both the left and right divs. These classes determine which part of the div is shown and which part moves off the screen.
+
+Events
+
+The JavaScript is incredibly simple, we’re toggling the classes on click for each div. If the left div is clicked give it the active class and give the right div the hidden class and vice versa.
