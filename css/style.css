@@ -44,7 +44,7 @@ body {
           transform: translate(0, 0);
 }
 .panel--left {
-  background: #f4d03f;
+  background: #E1EC4A;
 }
 .panel--left:hover .arrow {
   -webkit-transform: translate(-100%, -50%);
@@ -52,7 +52,7 @@ body {
           transform: translate(-100%, -50%);
 }
 .panel--right {
-  background: #19b5fe;
+  background: #FFFFFF;
 }
 .panel--right:hover .arrow {
   -webkit-transform: translate(0, -50%);
